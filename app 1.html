@@ -1,0 +1,96 @@
+<!doctype html>
+c
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Quick, affordable printing for students." />
+  <title>STUDIO XEROX | Print without the wait</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div class="app-shell">
+    <header class="topbar">
+      <a class="brand" href="#top" aria-label="STUDIO XEROX home">
+        <span class="brand-mark">S</span><span>STUDIO XEROX</span>
+      </a>
+      <nav class="topnav" aria-label="Main navigation">
+        <a class="active" href="#order">New order</a>
+        <a href="#how-it-works">How it works</a>
+        <a href="#support">Support</a>
+      </nav>
+      <button class="account-button" type="button">Log in <span aria-hidden="true">&#8599;</span></button>
+    </header>
+
+    <main id="top">
+      <section class="hero" aria-labelledby="hero-title">
+        <div class="hero-copy">
+          <p class="eyebrow"><span class="status-dot"></span> Printing near your campus</p>
+          <h1 id="hero-title">Print it.<br><em>Pick it up.</em></h1>
+          <p class="hero-text">Skip the queue. Send your notes, records or assignments to a nearby print partner and get on with your day.</p>
+          <div class="hero-proof"><span class="proof-avatars"><i>R</i><i>A</i><i>M</i></span><span><strong>1,200+</strong> students printed this week</span></div>
+        </div>
+        <div class="hero-note" aria-label="Service promise">
+          <span class="note-label">PAPER. READY.</span>
+          <span class="note-line"></span>
+          <p>Upload before your next class.<br><strong>Ready in 20–30 min.</strong></p>
+          <span class="note-arrow">&#8595;</span>
+        </div>
+      </section>
+
+      <section class="order-layout" id="order" aria-label="Create a print order">
+        <div class="order-panel">
+          <div class="section-heading"><div><span class="step-number">01</span><h2>Send your file</h2></div><span class="helper">PDF up to 50 MB</span></div>
+          <label class="upload-zone" for="file-upload" id="upload-zone">
+            <input id="file-upload" type="file" accept=".pdf,.doc,.docx,.jpg,.jpeg,.png" />
+            <span class="upload-icon" aria-hidden="true">&#8593;</span>
+            <span class="upload-title" id="upload-title">Drop your file here</span>
+            <span class="upload-subtitle" id="upload-subtitle">or <u>browse from your device</u></span>
+          </label>
+
+          <div class="section-heading options-heading"><div><span class="step-number">02</span><h2>Make it yours</h2></div><span class="helper">Change anytime</span></div>
+          <div class="option-grid">
+            <fieldset class="option-group wide"><legend>Print colour</legend><div class="segmented colour-options"><label><input type="radio" name="colour" value="bw" checked><span><b class="swatch ink"></b>Black &amp; white <small>$1.50 / page</small></span></label><label><input type="radio" name="colour" value="colour"><span><b class="swatch colour"></b>Colour <small>$5.00 / page</small></span></label></div></fieldset>
+            <fieldset class="option-group"><legend>Sides</legend><div class="segmented"><label><input type="radio" name="sides" value="single" checked><span>Single side</span></label><label><input type="radio" name="sides" value="double"><span>Double side</span></label></div></fieldset>
+            <div class="quantity-row"><label for="pages">Pages</label><div class="stepper"><button type="button" data-step="pages" data-change="-1" aria-label="Decrease pages">−</button><input id="pages" type="number" min="1" value="50" aria-label="Number of pages"><button type="button" data-step="pages" data-change="1" aria-label="Increase pages">+</button></div></div>
+            <div class="quantity-row"><label for="copies">Copies</label><div class="stepper"><button type="button" data-step="copies" data-change="-1" aria-label="Decrease copies">−</button><input id="copies" type="number" min="1" value="2" aria-label="Number of copies"><button type="button" data-step="copies" data-change="1" aria-label="Increase copies">+</button></div></div>
+          </div>
+        </div>
+
+        <aside class="summary-card" aria-live="polite">
+          <div class="summary-top"><span class="summary-kicker">YOUR ESTIMATE</span><span class="location-pill"><span class="pin">&#9679;</span> Main campus</span></div>
+          <div class="price-line"><span>$</span><strong id="total-price">150.00</strong></div>
+          <p class="price-note">Estimated total, taxes included</p>
+          <div class="breakdown"><div><span id="line-item">50 pages × 2 copies</span><strong id="print-total">$150.00</strong></div><div><span>Pickup at print partner</span><strong class="free">FREE</strong></div><div><span>Estimated ready time</span><strong>20–30 min</strong></div></div>
+          <div class="pickup-choice"><span class="choice-icon">&#10003;</span><div><strong>Pickup is selected</strong><small>Campus Copy Hub · 0.4 mi away</small></div><span class="chevron">&#8250;</span></div>
+          <button class="place-order" id="place-order" type="button">Place order <span aria-hidden="true">&#8594;</span></button>
+          <p class="secure-note"><span aria-hidden="true">&#9679;</span> Pay online or at pickup. No surprise fees.</p>
+        </aside>
+      </section>
+
+      <section class="how-it-works" id="how-it-works"><div class="section-label">THE SIMPLE LOOP</div><div class="steps"><div><span>01</span><h3>Send</h3><p>Upload your file from anywhere.</p></div><div><span>02</span><h3>We print</h3><p>A trusted local partner gets to work.</p></div><div><span>03</span><h3>You go</h3><p>Collect it when it is ready.</p></div></div></section>
+      <section class="owner-tools" id="owner-tools" aria-labelledby="owner-title">
+        <div class="owner-heading"><div><span class="section-label">PARTNER DASHBOARD</span><h2 id="owner-title">Owner controls</h2></div><span class="owner-badge">PRICING LIVE</span></div>
+        <p class="owner-intro">Update your rates or add a service. Changes show in the student estimate immediately.</p>
+        <div class="owner-grid">
+          <form class="pricing-form" id="pricing-form">
+            <label>New print item <input id="item-name" type="text" placeholder="e.g. A4 lamination" required></label>
+            <label>Price per page <span class="money-input"><b>$</b><input id="item-price" type="number" min="0.01" step="0.01" placeholder="2.00" required></span></label>
+            <button type="submit" class="add-item">Add item <span>+</span></button>
+          </form>
+          <div class="pricing-list" id="pricing-list" aria-label="Current pricing"></div>
+        </div>
+      </section>
+    </main>
+    <footer id="support">
+      <span>STUDIO XEROX / built for students</span>
+      <span>Need a hand? hello@studioxerox.local</span>
+    </footer>
+  </div>
+  <div class="toast" id="toast" role="status">Your order is ready to go. This demo does not submit payments yet.</div>
+  <script src="script.js"></script>
+</body>
+</html>
